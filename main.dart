@@ -1,6 +1,12 @@
 void main() {
-    // 둘  다 가능 
-    var name = "Nick";
+    dynamic name;
     name = "Niku";
-    String lastName = "Kim";
+    if(name is String) {
+        print(name.length);
+    }
+    name = 12;
+    if (name is int) {
+      print(name.isEven);
+    }
+    name = true;
 }
