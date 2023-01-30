@@ -1,4 +1,8 @@
 void main() {
-    const name = "nick";
-    //컴파일 될때 값을 알고 있는 것들
+    String name = "nick";
+    bool alive = true;
+    int age = 29;
+    double money = 68.5;
+    num x = 12;
+    x = 2.2;
 }
