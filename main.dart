@@ -1,8 +1,11 @@
+String sayHello2(String name) => "Hello $name nice to meet you!";
+
+void sayHello(String name) {
+  print("hello $name nice to meet you!");
+}
+
+num plus(num a, num b) => a + b;
+
 void main() {
-  var numbers = {1, 2, 3, 4};
-  Set<int> numbers2 = {1, 2, 3, 4};
-  numbers.add(1);
-  numbers.add(1);
-  numbers.add(1);
-  print(numbers);
+  print(sayHello2('nick'));
 }
