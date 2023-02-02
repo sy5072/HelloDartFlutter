@@ -1,8 +1,8 @@
 void main() {
-    String name = "nick";
-    bool alive = true;
-    int age = 29;
-    double money = 68.5;
-    num x = 12;
-    x = 2.2;
+  var giveMeFieve = true;
+  var numbers = [1, 2, 3, 4, if (giveMeFieve) 5,];
+  print(numbers);
+  numbers.first;
+  numbers.last;
+  
 }
