@@ -1,7 +1,6 @@
 void main() {
-  var giveMeFieve = true;
-  var numbers = [1, 2, 3, 4, if (giveMeFieve) 5,];
-  print(numbers);
-  numbers.first;
-  numbers.last;
+  var name = 'nick';
+  var age = 27;
+  var gretting = "Hello I'm $name and ${age + 2}";
+  print(gretting);
 }
