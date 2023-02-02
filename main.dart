@@ -4,5 +4,4 @@ void main() {
   print(numbers);
   numbers.first;
   numbers.last;
-  
 }
