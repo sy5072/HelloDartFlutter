@@ -1,35 +1,39 @@
-class Human {
-  final String name;
-  Human({required this.name});
-  void sayHello() {
-    print("Hi My name is $name");
+// Mixin 의 조건은 생성자가 없는 클래스여야 한다.
+class Strong {
+  final double strengthLevel = 1500.99;
+}
+
+class QuickRunner {
+  void runQuick() {
+    print("runnnnnnnnn!!");
   }
+}
+
+class Tall {
+  final double height = 1.70;
 }
 
 enum Team { red, blue }
 
-class Player extends Human {
+class Player with Strong, QuickRunner, Tall {
   final Team team;
 
   Player({
     required this.team,
     required String name,
-  }) : super(name: name);
-
-  @override
-  void sayHello() {
-    super.sayHello();
-    print("and I play for ${team}");
-  }
+  });
 }
+
+class Horse with Strong, QuickRunner {}
+
+class Kid with QuickRunner {}
 
 void main() {
   var player = Player(
     team: Team.red,
-    name: "nick",
+    name: "Nick",
   );
 
-  player.sayHello();
-  player.team;
-  player.name;
+  print(player.height);
+  player.runQuick();
 }
