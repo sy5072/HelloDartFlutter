@@ -49,7 +49,7 @@ class App extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(
-                  height: 100,
+                  height: 50,
                 ),
                 Text(
                   'Total Balance',
